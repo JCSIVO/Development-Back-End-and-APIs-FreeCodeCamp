@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!--<html>
+   <head>
+      <title>Timestamp Microservice | freeCodeCamp.org</title>
+      <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+    <h1>Timestamp Microservice</h1>
+    <hr />
+    <div class="container">
+      <h3>Example Usage:</h3>
+      <ul>
+        <li><a href="api/2015-12-25">[project url]/api/2015-12-25</a></li>
+        <li><a href="api/1451001600000">[project url]/api/1451001600000</a></li>
+      </ul>
+
+      <h3>Example Output:</h3>
+      <p>
+        <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+      </p>
+    </div>
+    <div class="footer">
+      <p>
+        By <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+      </p>
+    </div>
+  </body>
+</html>-->
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <link rel="shortcut icon"  type="icon/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h2>Timestamp Microservice</h2>
+
+    <form action="/api/timestampform" method="POST">
+      <label for="url_input">Enter an ISO Date or Timestamp</label>
+      <input id="url_input" type="text" name="input" />
+      <input type="submit" value="GET TIME" />
+    </form>
+
+    <button onclick="window.location.href='/api/timestamp'">
+      Get Current Time
+    </button>
+
+    <div class="container">
+      <h3>Example Usage:</h3>
+      <a href="api/timestamp/2015-12-25"
+        >[project url]/api/timestamp/2015-12-25</a
+      ><br />
+      <a href="api/timestamp/1451001600000"
+        >[project url]/api/timestamp/1451001600000</a
+      ><br /><br />
+      <h3>Example Output:</h3>
+      <p>
+        <code
+          >{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code
+        >
+      </p>
+    </div>
+
+    <p>by <a href="https://github.com/JCSIVO">JCSIVO</a></p>
+  </body>
+</html>
